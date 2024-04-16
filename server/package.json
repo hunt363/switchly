@@ -2,10 +2,10 @@
   "name": "switchly-api",
   "version": "1.0.0",
   "description": "a url shortener api",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsc && node ./dist/index.js",
+    "start": "npx tsc && node ./dist/server.js",
     "build": "npx tsc",
     "dev": "nodemon"
   },
