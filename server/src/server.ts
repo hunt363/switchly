@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cors({
     origin: "https://switchly.vercel.app/"||"http://localhost:3000/",
     credentials: true,
-));
+}));
 
 app.use("/api/",shortUrl);
 
