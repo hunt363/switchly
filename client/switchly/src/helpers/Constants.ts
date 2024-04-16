@@ -1,1 +1,1 @@
-export const serverUrl=import.meta.env.SERVER_URL||"https://switchly-api.vercel.app/api";
+export const serverUrl=import.meta.env.SERVER_URL||"http://localhost:5001";
