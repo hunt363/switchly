@@ -25,7 +25,11 @@ app.use(cors());
 // }))
 
 app.use("/api/",shortUrl);
+app.get('/', (req, res) => {
+    res.send('API alive')
+  })
 
 app.listen(port, ()=>{
     console.log(`server started on port:${port}`);
-})}catch(error){console.log(error)}
+}
+)}catch(error){console.log(error)}
