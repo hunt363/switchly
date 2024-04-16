@@ -16,7 +16,7 @@ const Container: React.FunctionComponent<IContainerProps> = () => {
         setReload(true);
     }
     const fetchTableData=async()=>{
-        const response=await axios.get(`${serverUrl}/shortUrl`);
+        const response=await axios.get(`${serverUrl}/api/shortUrl`);
         //console.log(response);
         setData(response.data);
         console.log(data);
