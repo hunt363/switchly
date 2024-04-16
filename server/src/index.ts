@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db";
-import shortUrl from "./routes/shortUrl";
+import shortUrl from "./api/shortUrl";
 dotenv.config();
 connectDB();
 
