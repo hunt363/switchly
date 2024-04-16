@@ -3,10 +3,10 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db";
 import shortUrl from "./routes/shortUrl";
-try{dotenv.config();
+dotenv.config();
 connectDB();
 
-const port=process.env.PORT||5001;
+const port=process.env.PORT||3000;
 console.log(process.env.PORT);
 
 const app = express();
@@ -32,4 +32,4 @@ app.get('/', (req, res) => {
 app.listen(port, ()=>{
     console.log(`server started on port:${port}`);
 }
-)}catch(error){console.log(error)}
+)
