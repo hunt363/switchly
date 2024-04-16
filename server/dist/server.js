@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const cors_1 = __importDefault(require("cors"));
 const db_1 = __importDefault(require("./config/db"));
-const shortUrl_1 = __importDefault(require("./api/shortUrl"));
+const shortUrl_1 = __importDefault(require("./routes/shortUrl"));
 dotenv_1.default.config();
 (0, db_1.default)();
 const port = process.env.PORT || 5001;
