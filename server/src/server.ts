@@ -28,3 +28,5 @@ app.use("/api/",shortUrl);
 app.listen(port, ()=>{
     console.log(`server started on port:${port}`);
 })
+
+module.exports(app);
