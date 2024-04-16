@@ -11,15 +11,16 @@ const port=process.env.PORT||5001;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-app.use(cors({
-    origin: "https://switchly.vercel.app",
-    credentials: true,
-}));
+app.use(cors());
+// app.use(cors({
+//     origin: "https://switchly.vercel.app",
+//     credentials: true,
+// }));
 
-app.use(cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-}))
+// app.use(cors({
+//     origin: "http://localhost:3000",
+//     credentials: true,
+// }))
 
 app.use("/api/",shortUrl);
 
